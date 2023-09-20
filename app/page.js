@@ -5,8 +5,8 @@ export default function Home() {
 	return (
 		<div>
 			<Navbar />
-			<section className="flex items-center justify-center my-6 font-bold ">
-				Welcome From TO DO APP
+			<section className="flex items-center justify-center my-6 font-bold text-2xl ">
+				Welcome, use it and know what it is.
 			</section>
 		</div>
 	);

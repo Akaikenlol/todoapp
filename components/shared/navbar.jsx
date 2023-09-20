@@ -1,11 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Button } from "../ui/button";
 
 const Navbar = () => {
 	return (
-		<nav className="w-full flex justify-between mb-10 pt-3  bg-green-100">
+		<nav className="w-full flex justify-between mb-5 pt-3  bg-teal-100">
 			<Link
 				href="/"
 				className="flex gap-5 justify-between items-center mx-5 mb-2"
@@ -20,8 +21,15 @@ const Navbar = () => {
 				<p className="font-semibold">TO DO APP</p>
 			</Link>
 			<div className="flex gap-5 mx-5">
-				<Button>SignIn</Button>
-				<Button>SignOut</Button>
+				<Link href="/create" className="white_btn">
+					Create
+				</Link>
+				<button className="black_btn" onClick={(e) => {}}>
+					Sign In
+				</button>
+				<button className="black_btn" onClick={(e) => {}}>
+					Sign Out
+				</button>
 			</div>
 		</nav>
 	);
