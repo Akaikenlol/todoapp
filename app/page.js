@@ -1,5 +1,5 @@
+import SearchBar from "@/components/shared/SearchBar";
 import Navbar from "@/components/shared/navbar";
-import Image from "next/image";
 
 export default function Home() {
 	return (
@@ -8,6 +8,7 @@ export default function Home() {
 			<section className="flex items-center justify-center my-6 font-bold text-2xl ">
 				Welcome, use it and know what it is.
 			</section>
+			<SearchBar />
 		</div>
 	);
 }

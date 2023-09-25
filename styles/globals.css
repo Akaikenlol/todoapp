@@ -80,7 +80,7 @@
 }
 
 .white_btn {
-	@apply rounded-md border border-white bg-teal-200 mt-2 mb-5 py-2 px-4 text-white transition-all hover:bg-white hover:text-teal-200 text-center text-sm  flex items-center justify-center;
+	@apply rounded-md border border-black bg-white mt-2 mb-5 py-2 px-4 text-black transition-all hover:bg-black hover:text-white text-center text-sm  flex items-center justify-center;
 }
 
 .outline_btn {

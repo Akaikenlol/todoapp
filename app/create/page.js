@@ -1,3 +1,4 @@
+import Upload from "@/components/shared/Upload";
 import Navbar from "@/components/shared/navbar";
 import React from "react";
 
@@ -10,6 +11,7 @@ const Create = () => {
 					Welcome, get started by creating your own list for today...
 				</div>
 			</section>
+			<Upload />
 		</div>
 	);
 };
