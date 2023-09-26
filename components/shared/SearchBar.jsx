@@ -7,7 +7,7 @@ import { useState } from "react";
 function SearchBar() {
 	const [search, setSearch] = useState("");
 	return (
-		<div className="flex bg-slate-400 w-full sm:w-80 rounded-md m-auto">
+		<div className="flex bg-slate-200 w-full sm:w-80 rounded-md m-auto">
 			<input
 				id="text"
 				type="search"

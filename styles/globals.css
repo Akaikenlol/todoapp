@@ -86,3 +86,6 @@
 .outline_btn {
 	@apply rounded-md border border-black bg-transparent mt-2 mb-5 py-2 px-4 text-black transition-all hover:bg-black hover:text-white text-center text-sm  flex items-center justify-center;
 }
+.submit_btn {
+	@apply rounded-md border border-black bg-transparent mt-2 mb-5 py-2 px-4 text-black transition-all hover:bg-orange-100 hover:text-white text-center text-sm  flex items-center justify-center;
+}
