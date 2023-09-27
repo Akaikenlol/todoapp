@@ -7,15 +7,17 @@ import { useState } from "react";
 function SearchBar() {
 	const [search, setSearch] = useState("");
 	return (
-		<div className="flex bg-slate-200 w-full sm:w-80 rounded-md m-auto">
-			<input
-				id="text"
-				type="search"
-				onChange={() => {}}
-				placeholder="Search Your To Do List!"
-				className="w-full sm:w-80 h-5 p-5 bg-transparent outline-none rounded-md"
-			/>
-			<div className="m-2">
+		<div className="flex gap-5 justify-center items-center ">
+			<div className="flex bg-orange-100 rounded-md ">
+				<input
+					id="text"
+					type="search"
+					onChange={() => {}}
+					placeholder="Search Your To Do List!"
+					className=" sm:w-96 h-5 p-5 bg-transparent outline-none rounded-md text-gray-500 placeholder-gray-400"
+				/>
+			</div>
+			<div className="bg-white shadow-xl hover:bg-teal-100 p-2 rounded-md ">
 				<Image
 					src="/assets/search-gray.svg"
 					alt="search"

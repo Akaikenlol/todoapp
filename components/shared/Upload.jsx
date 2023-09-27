@@ -14,7 +14,7 @@ const Upload = () => {
 				/>
 			</div>
 			<div className="mt-3">
-				<button className="outline_btn h-auto">Add</button>
+				<button className="outline_btn h-auto shadow-lg">Add</button>
 			</div>
 		</div>
 	);
