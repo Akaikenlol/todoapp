@@ -3,6 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {
+	SignedIn,
+	SignedOut,
+	SignInButton,
+	UserButton,
+	SignOutButton,
+} from "@clerk/nextjs";
 
 const Navbar = () => {
 	return (
@@ -21,15 +28,27 @@ const Navbar = () => {
 				<p className="font-semibold">TO DO APP</p>
 			</Link>
 			<div className="flex gap-5 mx-5">
+				<div className="mt-3 mr-3">
+					<SignedIn>
+						<UserButton />
+					</SignedIn>
+				</div>
+				<SignedOut>
+					<SignInButton>
+						<button className="black_btn">
+							<UserButton afterSignOutUrl="/" />
+							Sign In
+						</button>
+					</SignInButton>
+				</SignedOut>
 				<Link href="/create" className="white_btn">
 					Create
 				</Link>
-				<button className="black_btn" onClick={(e) => {}}>
-					Sign In
-				</button>
-				<button className="black_btn" onClick={(e) => {}}>
-					Sign Out
-				</button>
+				<SignedIn>
+					<SignOutButton>
+						<button className="black_btn">Sign Out</button>
+					</SignOutButton>
+				</SignedIn>
 			</div>
 		</nav>
 	);
