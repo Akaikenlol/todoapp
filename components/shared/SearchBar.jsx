@@ -14,7 +14,7 @@ function SearchBar() {
 					type="search"
 					onChange={() => {}}
 					placeholder="Search Your To Do List!"
-					className=" sm:w-96 h-5 p-5 bg-transparent outline-none rounded-md text-gray-500 placeholder-gray-400"
+					className=" sm:w-96 h-5 p-5 bg-transparent outline-none rounded-md text-gray-500 placeholder-gray-400 shadow-md"
 				/>
 			</div>
 			<div className="bg-white shadow-xl hover:bg-teal-100 p-2 rounded-md ">
@@ -23,7 +23,7 @@ function SearchBar() {
 					alt="search"
 					width={20}
 					height={20}
-					className="object-contain"
+					className="object-contain cursor-pointer "
 				/>
 			</div>
 		</div>

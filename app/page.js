@@ -1,5 +1,6 @@
 import SearchBar from "@/components/shared/SearchBar";
 import Navbar from "@/components/shared/navbar";
+import Card from "@/components/shared/card";
 
 export default function Home() {
 	return (
@@ -9,6 +10,9 @@ export default function Home() {
 				Welcome, use it and know what it is.
 			</section>
 			<SearchBar />
+			<div>
+				<Card />
+			</div>
 		</div>
 	);
 }
