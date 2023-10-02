@@ -1,17 +1,19 @@
 import SearchBar from "@/components/shared/SearchBar";
 import Navbar from "@/components/shared/navbar";
 import Card from "@/components/shared/card";
+import prisma from "@/helper/prisma";
 
-export default function Home() {
+export default async function Home() {
+	const todo = await prisma.todo.findMany();
 	return (
 		<div>
-			<Navbar />
+			{/* <Navbar /> */}
 			<section className="flex items-center justify-center mb-5 font-bold text-2xl ">
 				Welcome, use it and know what it is.
 			</section>
 			<SearchBar />
 			<div>
-				<Card />
+				<Card todo={todo} />
 			</div>
 		</div>
 	);
