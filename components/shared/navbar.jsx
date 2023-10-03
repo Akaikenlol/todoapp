@@ -10,8 +10,10 @@ import {
 	UserButton,
 	SignOutButton,
 } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+	const router = useRouter();
 	return (
 		<nav className="w-full flex justify-between mb-5 pt-3  bg-teal-100">
 			<Link
@@ -45,7 +47,7 @@ const Navbar = () => {
 					Create
 				</Link>
 				<SignedIn>
-					<SignOutButton>
+					<SignOutButton signOutCallback={() => router.push("/sign-in")}>
 						<button className="black_btn">Sign Out</button>
 					</SignOutButton>
 				</SignedIn>

@@ -1,11 +1,8 @@
-"use client";
-
-import Upload from "@/components/shared/Upload";
-import Navbar from "@/components/shared/navbar";
+import { auth } from "@clerk/nextjs";
 import Form from "@/components/shared/form";
-import React from "react";
 
 const Create = () => {
+	const { userId } = auth();
 	return (
 		<div>
 			{/* <Navbar /> */}
@@ -13,7 +10,7 @@ const Create = () => {
 				<div className="font-semibold text-2xl flex justify-center mb-1">
 					Welcome, get started by creating your own list for today...
 				</div>
-				<Form />
+				<Form userId={userId} />
 			</section>
 			{/* <Upload /> */}
 		</div>

@@ -1,13 +1,13 @@
 "use client";
 
-import prisma from "@/helper/prisma";
 import axios from "axios";
 import { useState } from "react";
 
-const Form = () => {
+const Form = ({ userId }) => {
 	const [data, setData] = useState({
 		title: "",
 		description: "",
+		userId,
 	});
 	// console.log("data", data);
 
