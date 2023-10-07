@@ -21,13 +21,14 @@ const Navbar = () => {
 				className="flex gap-5 justify-between items-center mx-5 mb-2"
 			>
 				<Image
-					src="https://i.pinimg.com/564x/1f/e3/1b/1fe31b546be395c06e4feada0283e76d.jpg"
+					// src="https://i.pinimg.com/564x/1f/e3/1b/1fe31b546be395c06e4feada0283e76d.jpg"
+					src="/assets/favicon.ico"
 					alt="logo"
-					width={50}
-					height={50}
+					width={60}
+					height={60}
 					className="object-contain rounded-full"
 				/>
-				<p className="font-semibold">TO DO APP</p>
+				<p className="text-2xl">Task Master</p>
 			</Link>
 			<div className="flex gap-5 mx-5">
 				<div className="mt-3 mr-3">

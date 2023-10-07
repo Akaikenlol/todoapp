@@ -27,10 +27,12 @@ const Form = ({ userId }) => {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className=" bg-gray-400 flex flex-col items-center justify-center p-5 gap-4 w-fit"
+			className=" bg-orange-100 flex flex-col items-center justify-center p-5 gap-4 w-fit shadow-lg rounded-lg mt-10  placeholder-gray-400 border-orange-300 border"
 		>
-			<div className="flex flex-col">
-				<label htmlFor="title">Title</label>
+			<div className="flex flex-col  ">
+				<label htmlFor="title" className="text-xl">
+					Title
+				</label>
 				<input
 					type="text"
 					placeholder="Input your title"
@@ -40,10 +42,13 @@ const Form = ({ userId }) => {
 							title: e.target.value,
 						})
 					}
+					className="sm:w-96 h-5 p-5 mt-4 mb-4 bg-transparent outline-none rounded-md text-gray-500 placeholder-gray-400 shadow-md border-orange-200 border"
 				/>
 			</div>
 			<div className="flex flex-col">
-				<label htmlFor="description">Description</label>
+				<label htmlFor="description" className="text-xl">
+					Description
+				</label>
 				<input
 					type="text"
 					placeholder="Input your description"
@@ -53,6 +58,7 @@ const Form = ({ userId }) => {
 							description: e.target.value,
 						})
 					}
+					className="sm:w-96 h-5 p-5 mt-4 mb-4 bg-transparent outline-none rounded-md text-gray-500 placeholder-gray-400 shadow-md  border-orange-200 border"
 				/>
 			</div>
 			<button type="submit" className="outline_btn h-auto">
